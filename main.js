@@ -86,7 +86,7 @@ button.addEventListener('click', (e) => {
 });
 
 
-const navigationSwitcher = document.querySelector('.naviagation__switcher--js');
+const navigationSwitcher = document.querySelector('.navigation__switcher--js');
 
 navigationSwitcher.addEventListener('click', (e) => {
     const navigationList = document.querySelector('.navigation__list--js');
