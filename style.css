@@ -1,0 +1,154 @@
+body {
+    background: rgb(176, 176, 190);
+}
+
+.mainHeader {
+    color: greenyellow;
+}
+
+.mainHeader--red {
+    color: darkred;
+}
+
+.sectionHeader {
+    color: rgb(42, 165, 124);
+    background: pink;
+}
+
+.diaryHeader {
+    color: red;
+    font-size: 64px;
+}
+
+p {
+    color: rgb(0, 4, 255);
+}
+
+.about {
+    overflow: hidden;
+}
+
+.paragraph {
+    padding-left: 16px;
+    border: 3px solid yellow;
+    border-radius: 50%;
+}
+
+.main {
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
+    padding-top: 70px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background: yellowgreen;
+    padding: 10px;
+    border: 10px solid red;
+    margin: 10px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+    right: 50%;
+}
+
+.top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: aqua;
+    text-decoration: none;
+}
+
+.main-header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: white;
+    min-height: 40px;
+}
+
+.navigation {}
+
+.navigation__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation__iteam {
+    display: inline;
+    padding: 5px;
+}
+
+.navigation__link {}
+
+.imageMe {
+    width: 100%;
+    max-width: 100px;
+    display: block;
+    float: left;
+    margin: 0 16px 16px 0;
+}
+
+.hobby {}
+
+.hobby__list {
+    list-style: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16 px;
+}
+
+@media (max-width:640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 641px) {
+    .main {
+        max-width: 900px;
+    }
+
+    .navigation__switcher{
+
+        display: none;
+    }
+   
+}
+
+@media (max-width: 640px) {
+    
+    
+    
+    .navigation__list {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navigation__list--visible{
+
+        display: flex;
+    }
+
+    .navigation__switcher{
+
+        border: none;
+        background: none;
+        position: absolute;
+        right:16px;
+        top:16px;
+
+    }
+}
